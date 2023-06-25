@@ -1,0 +1,11 @@
+Step 1:- Docker Installation Procedure 
+sudo apt-get update 
+sudo apt-get install docker.io
+
+Step 2:- Nexus installation Process using Docker.
+docker pull sonatype/nexus
+docker run -d -p 8081:8081 –name nexus -e MAX_HEAP=768m sonatype/nexus
+
+
+For accessing Nexus
+http://localhost:8081/nexus/
